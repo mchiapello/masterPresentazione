@@ -1,0 +1,107 @@
+---
+title: "Concetti base"
+output:
+  distill::distill_article:
+    toc: false
+---
+
+```{r echo = FALSE}
+# rmarkdown::render_site("concFond.Rmd")
+```
+
+## Obiettivi formativi
+
+1. Concetto di variabile    
+1. Concetto di vettore    
+1. Concetto di data.frame    
+
+## In caso di necessità
+
+In caso di problemi o domande non esitare a confrontarti con i tuoi colleghi, a scrivere sul canale [Help](https://2021-cnr-r-base.slack.com/archives/C02DE4EB1L4) di Slack o a me in [privato](https://2021-cnr-r-base.slack.com/archives/D027RRHFYSX).
+
+## Formative assessments
+
+Per poter eseguire gli esercizi da RStudio installa il pacchetto "intRo.Esercizi" con i seguenti comandi:    
+\> install.packages(c("devtools", "learnr"), dependencies = TRUE)    
+\> library(devtools)    
+\> install_github("2021-09-CNR-R-base/intRo.Esercizi", dependencies = TRUE)    
+\> learnr::run_tutorial("lezione_02_variabile", "intRo.Esercizi")
+\> learnr::run_tutorial("lezione_02_vettori", "intRo.Esercizi")
+\> learnr::run_tutorial("lezione_02_dataframe", "intRo.Esercizi")
+
+Formative assessments: l'obiettivo di questi esercizi è darvi la possibilità di capire i vostri progressi. Gli esercizi verranno visti solo da voi e verrà sempre data la possibilità di vedere la corretta soluzione. Non è obbligatorio fare gli esercizi, ma è ovviamente consigliato. 
+
+----
+
+## Concetto di variabile
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sC5OBcn-JKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Variabile concept map
+
+```{r, include=TRUE, fig.align="center", echo=FALSE}
+knitr::include_graphics("./images/variable.jpg")
+```
+
+<a href=images/variable.pdf>Per scaricare la mappa in pdf, clicca su questo link</a>
+
+### Risorse utili
+
+- [Style guide](http://adv-r.had.co.nz/Style.html)
+
+## Concetto di vettore
+
+### Parte I
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/82zTrHzzoI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Parte II
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TMloRNTerVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Parte III
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SbmDUqh9txc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Parte IV
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fHMP1oMeuRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Vettore concept map
+
+```{r, include=TRUE, fig.align="center", echo=FALSE}
+knitr::include_graphics("./images/vector.jpg")
+```
+
+<a href=images/vector.pdf>Per scaricare la mappa in pdf, clicca su questo link</a>
+
+## Concetto di data.frame    
+
+### Parte I
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rzk4FeZ4adE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Parte II
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fZnvi7Lq5no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Parte III
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yjYF_WuXqBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Link to dowload the lesson dataset
+
+```{r downData}
+download.file(url = "https://ndownloader.figshare.com/files/2292169",
+              destfile = "data/portal_data_joined.csv")
+```
+
+### data.frame concept map
+
+```{r, include=TRUE, fig.align="center", echo=FALSE}
+knitr::include_graphics("./images/Dataframe.jpg")
+```
+
+<a href=images/Dataframe.pdf>Per scaricare la mappa in pdf, clicca su questo link</a>
+
+# [Feedback](https://forms.gle/CRs1igiq517BmVK28)

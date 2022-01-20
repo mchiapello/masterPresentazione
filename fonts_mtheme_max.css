@@ -1,0 +1,407 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,700,700i);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:100;300;400;700);
+@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif);
+
+body {
+  font-family: 'Roboto', 'Fira Sans','Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
+  font-weight:300;
+  font-size: 120%;
+}
+
+p {
+  font-family: 'Roboto', 'Fira Sans','Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
+  font-size: 32px;
+}
+
+ul, ol {
+  font-family: 'Roboto', 'Fira Sans','Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
+  font-size: 32px;
+}
+
+.tt table td{
+    font-size: 14px;
+}
+
+.lh18 {
+  line-height: 18px;
+}
+
+.h21 p {
+  line-height: 23px;
+  font-size: 65%;
+}
+
+.h25 p {
+  line-height: 25px;
+  font-size: 60%;
+}
+
+.h25u ul li {
+  line-height: 25px;
+  font-size: 60%;
+}
+
+.h27 ul li {
+  line-height: 28px;
+  font-size: 27px;
+}
+
+.h12 ul li {
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.h12 ul li p {
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.h204 ul li {
+  line-height: 25px;
+  font-size: 22px;
+}
+
+.h204 ul li p {
+  line-height: 25px;
+  font-size: 22px;
+}
+
+.h201 ul li {
+  line-height: 22px;
+  font-size: 15px;
+}
+
+.h201 ul li p {
+  line-height: 22px;
+  font-size: 15px;
+}
+
+.h20 ul li {
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.h20 ul li p {
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.h202o ol li {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.h202o ol li p {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.h202 ul li {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.h202 ul li p {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+
+.h203 ul li p {
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.h25o ol li p {
+  line-height: 25px;
+  font-size: 80%;
+}
+
+.h25up ul li p {
+  line-height: 25px;
+  font-size: 80%;
+}
+
+.h26 li ul li {
+  line-height: 30px;
+  font-size: 80%;
+}
+.h26v2 li ul li p {
+  line-height: 10px;
+  margin: 2px;
+}
+.h26 p {
+  line-height: 30px;
+  font-size: 80%;
+}
+
+.m10ulp ul p {
+  line-height: 30px;
+  margin: 10px 0px;
+}
+
+.n30 p {
+  line-height: 30px;
+  font-size: 60%;
+}
+
+.h35 p {
+  line-height: 35px;
+}
+
+.pul20 p,.pul20 ul li,.pul20 ol li {
+  margin: 5px;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.p20 p {
+  margin: 2px;
+  font-size: 29px;
+  line-height: 31px;
+}
+
+.p201 p {
+  margin: 2px;
+  font-size: 23px;
+  line-height: 31px;
+}
+
+.h20 p {
+  line-height: 20px;
+}
+
+.h24 p {
+  line-height: 24px;
+}
+
+.marco {
+    text-align:right;
+    font-weight:100;
+}
+
+.fontW3 {
+  font-weight:300;
+}
+
+.fontW4 {
+  font-weight:400;
+}
+
+.fontW7 {
+  font-weight:700;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;
+  font-size: 80%;
+}
+
+.remark-inline-code {
+  /* background: #F5F5F5; /* lighter */
+  /* background: #e7e8e2; /* darker */
+    border-radius: 3px;
+  padding: 4px;
+}
+
+.code10 .remark-code {
+  font-size: 10%;
+}
+
+.code20 .remark-code {
+  font-size: 20%;
+}
+
+.code30 .remark-code {
+  font-size: 30%;
+}
+
+.code40 .remark-code {
+  font-size: 40%;
+}
+
+.code50 .remark-code {
+  font-size: 50%;
+}
+
+.code55 .remark-code {
+  font-size: 55%;
+}
+
+.code60 .remark-code {
+  font-size: 60%;
+}
+
+.code70 .remark-code {
+  font-size: 70%;
+}
+
+.code80 .remark-code {
+  font-size: 80%;
+}
+
+.code90 .remark-code {
+  font-size: 90%;
+}
+
+.code100 .remark-code {
+  font-size: 100%;
+}
+
+.code110 .remark-code {
+  font-size: 100%;
+}
+
+.code120 .remark-code {
+  font-size: 100%;
+}
+
+.code130 .remark-code {
+  font-size: 100%;
+}
+
+.code140 .remark-code {
+  font-size: 100%;
+}
+
+.code150 .remark-code {
+  font-size: 100%;
+}
+
+.font10 {
+  font-size: 10%;
+}
+
+.font20 {
+  font-size: 20%;
+}
+
+.font30 {
+  font-size: 30%;
+}
+
+.font40 {
+  font-size: 40%;
+}
+
+.font50 {
+  font-size: 50%;
+}
+
+.font20px p {
+  font-size: 20px;
+}
+
+.font60 {
+  font-size: 60%;
+}
+
+.font60_h15 {
+  font-size: 60%;
+  line-height: 1.5;
+  display: block;
+}
+
+.font70 {
+  font-size: 70%;
+}
+
+.n {
+  font-size: 70%;
+}
+
+.font80 {
+  font-size: 80%;
+}
+
+.font90 {
+  font-size: 90%;
+}
+
+.font100 {
+  font-size: 100%;
+}
+
+.font110 {
+  font-size: 110%;
+}
+
+.font120 {
+  font-size: 120%;
+}
+
+.font130 {
+  font-size: 130%;
+}
+
+.font140 {
+  font-size: 140%;
+}
+
+.font150 {
+  font-size: 150%;
+}
+
+.font160 {
+  font-size: 160%;
+}
+.font170 {
+  font-size: 170%;
+}
+.font180 {
+  font-size: 180%;
+}
+.font190 {
+  font-size: 190%;
+}
+.font200 {
+  font-size: 200%;
+}
+.font300 {
+  font-size: 300%;
+}
+.font600 {
+  font-size: 600%;
+}
+
+.font100px {
+  font-size: 100px;
+}
+
+.font400px {
+  font-size: 400px;
+}
+
+.font50px {
+  font-size: 300px;
+}
+
+.alignV {
+  vertical-align: center;
+}
+
+.opacity10{
+    opacity: 0.1;
+}
+
+.opacity50{
+    opacity: 0.5;
+}
+
+.opacity100p p{    opacity: 1;
+}
+
+.f400{
+    font-weight: 400;
+}
+
+.f500{
+    font-weight: 500;
+}

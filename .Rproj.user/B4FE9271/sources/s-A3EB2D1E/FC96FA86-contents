@@ -1,0 +1,286 @@
+---
+title: "Capitolo 1: Introduzione a R e RStudio"
+author: 
+  - "Marco Chiapello"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  fig.show = TRUE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  header_background_color = "#FF961C", 
+  inverse_header_color = "#FFFFFF",
+  padding = "1px 64px 16px 64px",
+  base_font_size = "30px",
+  header_font_google = google_font("Josefin Slab", "600"),
+  text_font_google = google_font("Roboto", "300"),
+  text_slide_number_font_size = "0px",
+  extra_fonts = list(
+    google_font("Sofia"),
+    # Young Serif by uplaod.fr
+    "https://cdn.jsdelivr.net/gh/uplaod/YoungSerif/fonts/webfonts/fontface.css"
+  ),
+  extra_css = list(
+    ".marco" = list("font-family" = "Sofia"),
+    ".fl img" = list(float = "right"),
+    ".fl p" = list(float = "right"),
+    ".orange" = list("color" = "#FF961C"),
+    ".content-box" = list(
+        "border-radius" = "15px",
+        "overflow" = "hidden",
+        "display" = "block",
+        "text-align" = "center",
+        "padding" = "2px",
+	      "background-color" = "#FF961C",
+        "margin" = "15px"),
+    ".f60" = list("font-size" = "60px"),
+    ".f20" = list("font-size" = "20px"),
+    ".f40" = list("font-size" = "40px"),
+    ".center" = list(
+      margin = "auto",
+      width = "50%",
+      padding = "10px"),
+    ".list1 p, .list1 ul li, .list1 ol li" = list(
+      "line-height" = "27px",
+      "font-size" = "25px",
+      "margin" = "10px"),
+    ".list2 p, .list2 ul li, .list2 ol li" = list(
+      "line-height" = "23px",
+      "font-size" = "20px",
+      "margin" = "0px"),
+    ".list3 p, .list3 ul li, .list3 ol li" = list(
+      "line-height" = "18px",
+      "font-size" = "15px",
+      "margin" = "0px"),
+      ".ml20" = list(
+       "margin-left" = "20px"),
+    ".m5h4 h4" = list("margin" = "5px"),
+    ".m5p p" = list("margin" = "5px")
+  )
+)
+
+library(xaringanExtra)
+use_tile_view() 
+xaringanExtra::use_logo(
+  image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
+)
+use_search(show_icon = FALSE)
+use_panelset()
+# TO render: rmarkdown::render('01_RRStudio.Rmd', 'xaringan::moon_reader')
+```
+
+## Capitolo 1
+
+.pull-left[
+
+- Cos’è R
+
+- Quali sono le potenzialità di R
+ 
+- Cos’è RStudio e perchè usarlo
+ 
+- Come funziona RStudio
+
+]
+
+---
+
+class: center middle inverse
+
+### Cos'è R
+
+----
+
+---
+
+layout: true
+
+# Cos'è R
+
+---
+
+<br>
+<br>
+.content-box[The term “R” is used to refer to both the programming language and the software that interprets the scripts written using it]
+
+---
+
+layout: true
+
+# Perchè usare R
+
+---
+
+.content-box[R does not involve lots of pointing and clicking, and that’s a good thing]
+
+---
+
+.content-box[R code is great for reproducibility]
+
+---
+
+.content-box[R is interdisciplinary and extensible]
+
+--
+
+#### Repository principali
+
+- CRAN    
+- Bioconductor    
+- Github
+
+---
+
+.content-box[R works on data of all shapes and sizes]
+
+---
+
+.content-box[R produces high-quality graphics]
+
+---
+
+.content-box[R has a large and welcoming community]
+
+---
+
+.content-box[Not only is R free, but it is also open-source and cross-platform]
+
+
+---
+
+layout: true
+
+# Potenzialità di R
+
+---
+
+class: center middle inverse
+
+----
+
+---
+
+1. .orange[.f40[RIPRODUCIBILITÀ]]
+
+--
+
+1. .f40[Analisi Statistiche]
+
+--
+
+1. .f40[Visualizzazioni grafiche]
+
+--
+
+1. .f40[Creazione di documenti]
+
+--
+
+.ml20[
+.list3[
+- Report statici 
+  - Documenti (pdf, word)     
+  - Presentazioni (powerpoint, html)    
+  - Libri
+
+- Report dinamici    
+  - Documenti (html)    
+  - Siti web    
+
+- Applicazioni
+]]
+
+---
+
+layout: true
+
+# RStudio IDE
+
+---
+
+class: center middle inverse
+
+----
+
+---
+
+
+ RStudio è una azienda che offre diversi prodotti
+
+ A noi interessa particolarmente: 
+
+> RStudio Integrated Development Environment (IDE)
+
+useremo RStudio IDE per scrivere codice, navigare file sul computer, visualizzare le variabili che andremo a create, importare, manipolare ed esportare dati e generare grafici. 
+
+RStudio IDE può fare anche altre cose, come: version control, sviluppare pacchetti, scrivere report interattivi, sviluppare applicazioni Shiny; ma queste non saranno oggetto di questo corso.
+
+---
+
+## WORKING DIRECTORY
+
+1. Che cosa si intende per working directory
+
+1. Come si cambia in RStudio
+
+1. Come organizzare la working directory
+
+---
+
+## Impostare le opzioni
+
+---
+
+## Come interagire con R
+
+---
+
+
+layout: true
+
+# Come cercare aiuto
+
+---
+
+class: center middle inverse
+
+----
+
+---
+
+1. Documentazione di RStudio
+
+1. Chiedere aiuto
+
+   - Colleghi
+
+   - Google
+
+   - Stack Overflow
+
+   - R-help mailing list
+
+   - Reproducible example
