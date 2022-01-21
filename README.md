@@ -5,3 +5,5 @@
 - Use `make html file=master.Rmd` to render the html
 
 - Use `make pdf file=master.html` to render the pdf
+
+Presentation on Github pages: https://mchiapello.github.io/masterPresentazione/master.html#1
