@@ -1,10 +1,10 @@
 all : clean html pdf
 
-html : master.Rmd
-	Rscript -e "library(rmarkdown); render('master.Rmd', 'xaringan::moon_reader')"
+html : $(file)
+	Rscript -e "library(rmarkdown); render('$(file)', 'xaringan::moon_reader')"
 
-pdf : master.Rmd
-	Rscript -e "xaringan::decktape('master.html', 'master.pdf')"
+pdf : $(file)
+	Rscript -e "xaringan::decktape('$(file)', '$(file).pdf')"
 
-clean :
-	rm master.html master.pdf; rm -r *_cache
+clean : 
+	rm *.html; rm *.html.pdf; rm -r *_cache
