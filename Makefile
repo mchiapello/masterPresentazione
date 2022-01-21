@@ -9,7 +9,3 @@ pdf : $(file)
 clean : 
 	rm *.html; rm *.html.pdf; rm -r *_cache docs/*
 
-public: $(file)
-	mkdir -p docs
-	cp $(file) docs
-	cp -r $(basename ${file})_cache docs
