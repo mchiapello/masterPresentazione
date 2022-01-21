@@ -20,6 +20,9 @@ output:
 ```{r setup, include=FALSE, cache=FALSE}
 # TO render: rmarkdown::render('master.Rmd', 'xaringan::moon_reader')
 
+# TO see all possible themes: names(xaringan:::list_css())
+# For example, you can use the metropolis theme: css: [default, metropolis, metropolis-fonts]
+
 # set working directory to docs folder
 setwd(here::here())
 
@@ -50,7 +53,7 @@ bib <- ReadBib("biblio/bib.bib", check = FALSE)
 
 ```{r xaringanExtra, echo=FALSE}
 library(xaringanExtra)
-use_tile_view() 
+use_tile_view()
 use_panelset()
 use_search(show_icon = FALSE)
 use_scribble()
@@ -112,7 +115,7 @@ class: title-slide
 .marco[
 .tada[Marco Chiapello]
 <br>
-2021-10-20
+`r Sys.Date()`
 <br>
 marco.chiapello@unito.it
 ]
