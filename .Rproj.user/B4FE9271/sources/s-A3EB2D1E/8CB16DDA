@@ -3,7 +3,7 @@
     "path": "~/Documents/001_WORK/masterPresentazioni/master.Rmd",
     "project_path": "master.Rmd",
     "type": "r_markdown",
-    "hash": "1529257196",
+    "hash": "816897746",
     "contents": "",
     "dirty": false,
     "created": 1642670017562.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "23,93",
-        "scrollLine": "2"
+        "cursorPosition": "24,94",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1642769492,
+    "lastKnownWriteTime": 1642770047,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1642769492402,
+    "last_content_update": 1642770047041,
     "read_only": false,
     "read_only_alternatives": []
 }
