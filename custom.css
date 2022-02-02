@@ -742,3 +742,65 @@
 .m5p p {
   margin: 5px;
 }
+
+
+/* Extra CSS */
+.marco1 {
+  font-family: Sofia;
+}
+.fl img {
+  float: right;
+}
+.fl p {
+  float: right;
+}
+.orange {
+  color: #FF961C;
+}
+.content-box {
+  border-radius: 15px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  padding: 2px;
+  background-color: #FF961C;
+  margin: 15px;
+}
+.f60 {
+  font-size: 60px;
+}
+.f20 {
+  font-size: 20px;
+}
+.f40 {
+  font-size: 40px;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.list1 p, .list1 ul li, .list1 ol li {
+  line-height: 27px;
+  font-size: 25px;
+  margin: 10px;
+}
+.list2 p, .list2 ul li, .list2 ol li {
+  line-height: 23px;
+  font-size: 20px;
+  margin: 0px;
+}
+.list3 p, .list3 ul li, .list3 ol li {
+  line-height: 18px;
+  font-size: 15px;
+  margin: 0px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.m5h4 h4 {
+  margin: 5px;
+}
+.m5p p {
+  margin: 5px;
+}
